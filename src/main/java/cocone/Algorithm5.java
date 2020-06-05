@@ -9,7 +9,7 @@ public class Algorithm5 {
         char[] blocks = s.toCharArray();
         int[] flags = new int[s.length()];
 
-        System.out.println(Arrays.toString(blocks) + " : " + Arrays.toString(flags) + " : " + text(blocks, flags)); // for Debug
+        // System.out.println(Arrays.toString(blocks) + " : " + Arrays.toString(flags) + " : " + text(blocks, flags)); // for Debug
 
         // 不能になるまでブロックの連結操作を行う
         while (true) {
@@ -49,7 +49,7 @@ public class Algorithm5 {
                     flags[i] = 1;
                     flags[j] = 1;
                     jointedCount++;
-                    System.out.println(Arrays.toString(blocks) + " : " + Arrays.toString(flags) + " : " + text(blocks, flags)); // for Debug
+                    // System.out.println(Arrays.toString(blocks) + " : " + Arrays.toString(flags) + " : " + text(blocks, flags)); // for Debug
                     break;
                 } else {
                     break;
@@ -61,12 +61,12 @@ public class Algorithm5 {
     }
 
     private static String text(char[] blocks, int[] flags) {
-        String text = "";
-        for (int i = 0; i < flags.length; i ++) {
+        StringBuilder text = new StringBuilder();
+        for (int i = 0; i < flags.length; i++) {
             if (flags[i] == 0) {
-                text += String.valueOf(blocks[i]);
+                text.append(String.valueOf(blocks[i]));
             }
         }
-        return text;
+        return text.toString();
     }
 }

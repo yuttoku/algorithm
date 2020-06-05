@@ -18,7 +18,7 @@ public class Algorithm3 {
         targetBeads[1] = e;
         targetBeads[2] = f;
 
-        System.out.println("initialBeads: " + Arrays.toString(currentBeads)); // for Debug
+        // System.out.println("initialBeads: " + Arrays.toString(currentBeads)); // for Debug
 
         // 解決するまでコンポジットを繰り返す
         while (!isResolved(currentBeads, targetBeads)) {
@@ -65,10 +65,10 @@ public class Algorithm3 {
                 }
 
                 // コンポジット
-                currentBeads[i] ++;
+                currentBeads[i]++;
                 currentBeads[j] -= 2;
                 compositedBeads++;
-                System.out.println("currentBeads: " + Arrays.toString(currentBeads)); // for Debug
+                // System.out.println("currentBeads: " + Arrays.toString(currentBeads)); // for Debug
             }
         }
         return compositedBeads;

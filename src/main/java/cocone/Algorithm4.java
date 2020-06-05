@@ -7,7 +7,7 @@ public class Algorithm4 {
 
         // 0番目の文字列からprefix候補を全パターン取得する
         String[] prefixs = new String[strs[0].length()];
-        for (int i = 0; i < prefixs.length; i ++){
+        for (int i = 0; i < prefixs.length; i++) {
             prefixs[i] = strs[0].substring(0, i + 1);
         }
 
@@ -17,9 +17,9 @@ public class Algorithm4 {
         // prefix候補と残り文字列をマッチング
         // System.out.println("--- START ---"); // for Debug
         int maxIndex = -1;
-        for (int i = 0; i < prefixs.length; i ++) {
+        for (int i = 0; i < prefixs.length; i++) {
             boolean hasPrefix = true;
-            for (int j = 1; j < strs.length; j ++) {
+            for (int j = 1; j < strs.length; j++) {
                 // String logMessage = "prefixs[" + i + "] vs strs[" + j + "] = \"" + prefixs[i] + "\" vs " + strs[j] + "\""; // for Debug
                 if (strs[j].indexOf(prefixs[i]) != 0) {
                     // logMessage += " BREAK"; // for Debug

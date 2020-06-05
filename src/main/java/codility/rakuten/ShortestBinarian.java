@@ -9,7 +9,7 @@ public class ShortestBinarian {
 
         // 配列の各要素を2の指数とし、総和を算出する
         int sum = 0;
-        for (int i: A) {
+        for (int i : A) {
             sum += Math.pow(2, i);
         }
 
@@ -30,18 +30,18 @@ public class ShortestBinarian {
             // 2を掛けられる回数を算出する
             int index = 0;
             int tmp2 = 1;
-            System.out.println("tmp - Math.pow(2, " + index + ")" + " = " + tmp + " - " + (int) Math.pow(2, index)); // for Debug
+            // System.out.println("tmp - Math.pow(2, " + index + ")" + " = " + tmp + " - " + (int) Math.pow(2, index)); // for Debug
             while (tmp >= tmp2 * 2) {
                 tmp2 = tmp2 * 2;
                 index++;
-                System.out.println("tmp - Math.pow(2, " + index + ")" + " = " + tmp + " - " + (int) Math.pow(2, index)); // for Debug
+                // System.out.println("tmp - Math.pow(2, " + index + ")" + " = " + tmp + " - " + (int) Math.pow(2, index)); // for Debug
             }
 
             // リストに指数を格納する
             tmp -= (int) Math.pow(2, index);
             shortestBinarianList.add(index);
-            System.out.println("num = " + tmp); // for Debug
-            System.out.println("shortestBinarianList: " + shortestBinarianList); // for Debug
+            // System.out.println("num = " + tmp); // for Debug
+            // System.out.println("shortestBinarianList: " + shortestBinarianList); // for Debug
         }
         return shortestBinarianList;
     }

@@ -10,16 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BinaryGapTest {
 
-
     BinaryGap sut = new BinaryGap();
-
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
-    }
 
     @ParameterizedTest
     @ValueSource(ints = {
@@ -59,4 +50,5 @@ class BinaryGapTest {
     })
     void gapLengthTwo(int n) {
         assertEquals(2, sut.solution(n));
-    }}
+    }
+}

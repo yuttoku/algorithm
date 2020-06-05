@@ -8,16 +8,16 @@ public class BinaryGap {
 
         // 10進数から2進数へ変換する
         String binary = Integer.toBinaryString(N);
-        System.out.println("decimal = " + N + ", binary = " + binary); // for Debug
+        // System.out.println("decimal = " + N + ", binary = " + binary); // for Debug
 
         // String -> char[]
         char[] binaryArray = binary.toCharArray();
-        System.out.println("binaryArray = " + Arrays.toString(binaryArray)); // for Debug
+        // System.out.println("binaryArray = " + Arrays.toString(binaryArray)); // for Debug
 
         int maxGap = 0;
         int currentGap = 0;
-        for (int i = 0; i < binaryArray.length; i++) {
-            if (binaryArray[i] == '0') {
+        for (char c : binaryArray) {
+            if (c == '0') {
                 currentGap++;
             } else {
                 if (maxGap < currentGap) {
@@ -25,7 +25,7 @@ public class BinaryGap {
                 }
                 currentGap = 0;
             }
-            System.out.println("binaryArray[i] = " + binaryArray[i] + ", currentGap = " + currentGap + ", maxGap = " + maxGap); // for Debug
+            // System.out.println("binaryArray[i] = " + c + ", currentGap = " + currentGap + ", maxGap = " + maxGap); // for Debug
         }
         return maxGap;
     }
