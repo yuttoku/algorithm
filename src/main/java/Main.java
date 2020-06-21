@@ -57,15 +57,6 @@ public class Main {
 //        System.out.println("parameter: " + parameter8);
 //        System.out.println("actual: "    + actual8);
 
-        // int[] parameter9_1 = {3, 8, 9, 7, 6};
-//        int[] parameter9_1 = {};
-//        int parameter9_2 = 3;
-//        int[] actual9 = new CyclicRotation().solution(parameter9_1, parameter9_2);
-//        System.out.println();
-//        System.out.println("Algorithm 9:");
-//        System.out.println("parameter: " + Arrays.toString(parameter9_1) + ", " + parameter9_2);
-//        System.out.println("actual: "    + Arrays.toString(actual9));
-
 //        int parameter10_1 = 10;
 //        int parameter10_2 = 85;
 //        int parameter10_3 = 30;

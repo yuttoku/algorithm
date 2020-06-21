@@ -1,16 +1,13 @@
 package codility.lesson1;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BinaryGapTest {
 
-    BinaryGap sut = new BinaryGap();
+   BinaryGap sut = new BinaryGap();
 
     @ParameterizedTest
     @ValueSource(ints = {
@@ -31,18 +28,19 @@ class BinaryGapTest {
         assertEquals(0, sut.solution(n));
     }
 
+    @ParameterizedTest
     @ValueSource(ints = {
             5  // 101
             , 10 // 1010
             , 11 // 1011
             , 13 // 1101
-            , 14 // 1110
             , 20  // 10100
     })
     void gapLengthOne(int n) {
         assertEquals(1, sut.solution(n));
     }
 
+    @ParameterizedTest
     @ValueSource(ints = {
             9  // 1001
             , 18 // 10010

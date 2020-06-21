@@ -1,5 +1,7 @@
 package codility.lesson2;
 
+import java.util.Arrays;
+
 public class CyclicRotation {
 
     public int[] solution(int[] A, int K) {
