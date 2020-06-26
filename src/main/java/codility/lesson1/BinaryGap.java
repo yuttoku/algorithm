@@ -1,7 +1,8 @@
 package codility.lesson1;
 
-import java.util.Arrays;
-
+/**
+ * https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+ */
 public class BinaryGap {
 
     public int solution(int N) {
